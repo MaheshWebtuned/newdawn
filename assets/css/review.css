@@ -1,0 +1,342 @@
+/* breadcrumb area in all inner pages */
+.breadcrumb-area {
+    position: relative;
+    background-image: url('../img/bestop11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+.breadcrumb-area::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.breadcrumb-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.breadcrumb-content h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.breadcrumb-content li {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: inline;
+    margin-right: 5px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.review-head {
+    text-align: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding-top: 40px;
+}
+
+
+.review-head h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+
+
+
+
+/* review section  */
+
+.review-container {
+    padding: 40px 0px 60px 0px;
+    background-color: #ffffff;
+}
+
+
+
+.carousel {
+    position: relative;
+    height: 50vh;
+    width: 95vw;
+    overflow: clip;
+    padding: 80px;
+
+    /* Required custom variables */
+    --items: 6;
+    --carousel-item-width: 400px;
+    --carousel-item-height: 300px;
+    --carousel-item-gap: 20px;
+    --carousel-duration: 30s;
+
+}
+
+.carousel[mask] {
+    mask-image: linear-gradient(to right, transparent, black 10% 90%, transparent);
+}
+
+.carousel:hover>article {
+    animation-play-state: paused;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e0dfdf;
+    padding-left: 10px;
+}
+
+
+.stars {
+    display: flex;
+    padding: 0px 5px;
+    height: fit-content;
+
+}
+
+.stars i {
+    font-size: 16px;
+    color: #f5b50a;
+    margin: 2px;
+}
+
+
+.review-text {
+    font-size: 16px;
+    color: #e0dfdf;
+    line-height: 1.5;
+}
+
+
+.review-text i {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0px 5px;
+}
+
+
+
+
+
+.carousel>article {
+    position: absolute;
+    top: 0;
+    left: calc(100% + var(--carousel-item-gap));
+    width: var(--carousel-item-width);
+    height: var(--carousel-item-height);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.5rem;
+    border-radius: 15px;
+    animation-name: marquee;
+    animation-duration: var(--carousel-duration);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+
+
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.92) 0%,
+            rgba(0, 0, 0, 0.758) 80%,
+            rgba(0, 0, 0, 0.605) 100%);
+    z-index: 0;
+
+}
+
+/* Animation delay for each item */
+.carousel>article:nth-child(1) {
+    --i: 0;
+    animation-delay: calc(var(--carousel-duration)/var(--items)*var(--i)*-1);
+}
+
+.carousel>article:nth-child(2) {
+    --i: 1;
+    animation-delay: calc(var(--carousel-duration)/var(--items)*var(--i)*-1);
+}
+
+.carousel>article:nth-child(3) {
+    --i: 2;
+    animation-delay: calc(var(--carousel-duration)/var(--items)*var(--i)*-1);
+}
+
+.carousel>article:nth-child(4) {
+    --i: 3;
+    animation-delay: calc(var(--carousel-duration)/var(--items)*var(--i)*-1);
+}
+
+.carousel>article:nth-child(5) {
+    --i: 4;
+    animation-delay: calc(var(--carousel-duration)/var(--items)*var(--i)*-1);
+}
+
+.carousel>article:nth-child(6) {
+    --i: 5;
+    animation-delay: calc(var(--carousel-duration)/var(--items)*var(--i)*-1);
+}
+
+@keyframes marquee {
+    100% {
+        transform: translateX(calc((var(--items) * (var(--carousel-item-width) + var(--carousel-item-gap))) * -1));
+    }
+}
+
+
+/* review section  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cta section */
+.cta-container {
+    padding: 40px;
+
+
+
+    background: linear-gradient(to top,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.9) 50%,
+            rgba(0, 0, 0, 0.6) 100%);
+    z-index: 0;
+}
+
+.cta-msg p {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+
+.cta-btn a {
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #25D366;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+
+.cta-btn:hover a {
+    transform: scale(1.03);
+}
+
+
+.cta-btn i {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 20px;
+    margin-right: 15px;
+    font-size: 20px;
+    animation: quickJerkShake 0.3s infinite ease-in-out;
+
+}
+
+
+
+@keyframes quickJerkShake {
+    0% {
+        transform: rotate(0 deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    40% {
+        transform: rotate(15deg);
+    }
+
+    60% {
+        transform: rotate(-15deg);
+    }
+
+    80% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0 deg);
+    }
+
+
+}

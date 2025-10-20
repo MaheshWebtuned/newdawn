@@ -1,0 +1,554 @@
+/* breadcrumb area in all inner pages*/
+.service-breadcrumb-area {
+    position: relative;
+    background-image: url('../img/gallery/Commercial Painting/TH_02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    width: 100%;
+    height: 250px;
+}
+
+.service-breadcrumb-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.service-breadcrumb-area::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+.service-breadcrumb-content {
+    z-index: 4;
+    text-align: center;
+    align-items: center;
+}
+
+
+.service-breadcrumb-content h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 20PX;
+}
+
+
+.service-breadcrumb-content li {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: capitalize;
+
+}
+
+/* breadcrumb area */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***  Service Single css    ***/
+
+.page-service-single {
+    padding: 80px;
+}
+
+
+
+.service-img-intro-container {
+    position: relative;
+}
+
+.service-img-intro {
+    -webkit-mask: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20600%22%3E%3Cpath%20d%3D%22M25%2C0H1040A40%2C40%200%2C0%2C1%201080%2C40V60A60%2C60%200%2C0%2C0%201140%2C120H1160A40%2C40%200%2C0%2C1%201200%2C160V575A25%2C25%200%2C0%2C1%201175%2C600H25A25%2C25%200%2C0%2C1%200%2C575V25A25%2C25%200%2C0%2C1%2025%2C0Z%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fsvg%3E') no-repeat center / contain;
+    mask: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20600%22%3E%3Cpath%20d%3D%22M25%2C0H1040A40%2C40%200%2C0%2C1%201080%2C40V60A60%2C60%200%2C0%2C0%201140%2C120H1160A40%2C40%200%2C0%2C1%201200%2C160V575A25%2C25%200%2C0%2C1%201175%2C600H25A25%2C25%200%2C0%2C1%200%2C575V25A25%2C25%200%2C0%2C1%2025%2C0Z%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fsvg%3E') no-repeat center / contain;
+    width: 100%;
+    background-color: #b09ba8;
+    aspect-ratio: 2 / 1;
+}
+
+
+.service-ball {
+    width: 8%;
+    height: 16%;
+    border-radius: 50%;
+    background: linear-gradient(135deg,
+            rgb(184, 115, 51) 0%,
+            rgba(184, 115, 51, 0.85) 50%,
+            rgba(184, 115, 51, 0.7) 100%);
+
+
+
+
+    position: absolute;
+    top: 5.8px;
+    right: 5px;
+    padding: 0.9%;
+
+    text-align: center;
+}
+
+
+.service-ball img {
+    width: 80%;
+    height: auto;
+
+    text-align: right;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.service-img-intro img {
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 2 / 1;
+
+}
+
+
+
+.service-entry {
+    margin-top: 40px;
+}
+
+.service-entry h3 {
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.service-entry p {
+    margin: 20px 0px;
+    color: black;
+}
+
+
+.service-entry h3 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+
+.service-entry ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.service-entry ul li {
+    position: relative;
+    width: calc(50% - 15px);
+    line-height: 1.5em;
+    padding-left: 30px;
+}
+
+.service-entry ul li::before {
+    content: "\f058";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    color: var(--accent-secondary-color);
+}
+
+.service-working-box,
+.service-why-choose {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* All Service  */
+
+.all-service-sidebar {
+    position: sticky;
+    top: 85px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.all-service-box {
+    background: linear-gradient(135deg,
+            var(--primary-color) 0%,
+            #2d2d2d 50%,
+            var(--secondary-color) 100%);
+
+    border-radius: 25px;
+    padding: 30px 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.all-service-box h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+
+.service {
+    margin: 10px 5px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 25px;
+    text-align: left;
+    background-color: white;
+    transition: all 0.3s ease;
+
+}
+
+.service a {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+
+.service:hover {
+    background-color: #B87333;
+}
+
+.service:hover a {
+    color: rgb(255, 255, 255);
+
+}
+
+.service.active {
+    background-color: #B87333;
+}
+
+.service.active a {
+    color: white;
+}
+
+
+
+
+.all-service-box p {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #B87333;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.call {
+    padding: 8px 30px;
+    border-radius: 30px;
+    background-color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+
+}
+
+.call:hover {
+    background-color: #B87333;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Service Why Choose */
+
+.service-why-choose {
+    padding-top: 20px;
+}
+
+
+.text-anime-style-2 {
+    padding-bottom: 15px;
+}
+
+.service-y {
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px 0px;
+    background: linear-gradient(135deg,
+            var(--primary-color) 0%,
+            #2d2d2d 50%,
+            var(--secondary-color) 100%);
+
+}
+
+
+
+.service-y img {
+    width: 60px;
+}
+
+.service-y h5 {
+    margin-top: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.service-y p {
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* service gallery */
+.service-gallery-section {
+    padding: 0px 60px 80px 60px;
+}
+
+
+.service-gallery-section h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+
+}
+
+
+
+.service-gallery-col {
+    padding: 10px;
+}
+
+.service-gallery-col img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media (max-width: 992px) {
+    .service-gallery-sectio {
+        padding: 0px 60px 80px 60px;
+    }
+
+    .page-service-single {
+        padding: 80px 60px;
+    }
+
+    .service-gallery-section {
+        padding: 80px 60px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .service-gallery-sectio {
+        padding: 0px 40px 60px 40px;
+    }
+
+    .page-service-single {
+        padding: 60px 40px;
+    }
+
+    .service-gallery-section {
+        padding: 60px 40px;
+    }
+
+
+}
+
+
+
+@media (max-width: 576px) {
+    .service-gallery-sectio {
+        padding: 0px 20px 40px 20px;
+    }
+
+    .page-service-single {
+        padding: 40px 20px;
+    }
+
+    .service-gallery-section {
+        padding: 40px 20px;
+    }
+
+
+}
+
+/* responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cta section */
+.cta-container {
+    padding: 40px;
+
+
+
+    background: linear-gradient(to top,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.9) 50%,
+            rgba(0, 0, 0, 0.6) 100%);
+    z-index: 0;
+}
+
+.cta-msg p {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+
+.cta-btn a {
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #25D366;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+
+.cta-btn:hover a {
+    transform: scale(1.03);
+}
+
+
+.cta-btn i {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 20px;
+    margin-right: 15px;
+    font-size: 20px;
+    animation: quickJerkShake 0.3s infinite ease-in-out;
+
+}
+
+
+
+@keyframes quickJerkShake {
+    0% {
+        transform: rotate(0 deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    40% {
+        transform: rotate(15deg);
+    }
+
+    60% {
+        transform: rotate(-15deg);
+    }
+
+    80% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0 deg);
+    }
+
+
+}
