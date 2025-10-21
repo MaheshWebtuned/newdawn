@@ -104,9 +104,9 @@
     height: 16%;
     border-radius: 50%;
     background: linear-gradient(135deg,
-            rgb(184, 115, 51) 0%,
-            rgba(184, 115, 51, 0.85) 50%,
-            rgba(184, 115, 51, 0.7) 100%);
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.8) 50%,
+            rgba(0, 0, 0, 0.6) 100%);
 
 
 
@@ -241,7 +241,7 @@
 
 .service {
     margin: 10px 5px;
-    padding: 5px;
+    padding: 8px 0px;
     padding-left: 20px;
     border-radius: 25px;
     text-align: left;
@@ -252,14 +252,14 @@
 
 .service a {
     color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     transition: all 0.2s ease;
 }
 
 
 .service:hover {
-    background-color: #B87333;
+    background-color: #000000;
 }
 
 .service:hover a {
@@ -268,7 +268,7 @@
 }
 
 .service.active {
-    background-color: #B87333;
+    background-color: #000000;
 }
 
 .service.active a {
@@ -281,7 +281,7 @@
 .all-service-box p {
     font-size: 18px;
     text-transform: capitalize;
-    color: #B87333;
+    color: #eae2e2;
     text-align: center;
     margin-top: 10px;
 }
@@ -296,7 +296,7 @@
 }
 
 .call:hover {
-    background-color: #B87333;
+    background-color: #000000;
     color: white;
 }
 

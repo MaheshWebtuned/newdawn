@@ -101,16 +101,39 @@
     width: 100%;
 }
 
+
+
+@media (max-width: 992px) {
+    .mansory-gallery {
+        padding: 40px 60px 80px 60px;
+    }
+
+
+}
+
+
+
 @media (max-width: 768px) {
     .mansory-gallery .column {
         flex: 50%;
     }
+
+    .mansory-gallery {
+        padding: 40px 40px 60px 40px;
+    }
+
+
 }
 
 @media (max-width: 500px) {
     .mansory-gallery .column {
         flex: 100%;
     }
+
+    .mansory-gallery {
+        padding: 40px 20px 40px 20px;
+    }
+
 }
 
 

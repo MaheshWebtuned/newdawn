@@ -333,3 +333,35 @@
 
 
 
+@media (max-width:992px) {
+    .about-container {
+        padding: 80px 60px;
+    }
+
+    .why-choose-section {
+        padding: 80px 60px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .about-container {
+        padding: 60px 40px;
+    }
+
+    .why-choose-section {
+        padding: 60px 40px;
+    }
+}
+
+
+@media (max-width:575px) {
+    .about-container {
+        padding: 40px 20px;
+    }
+
+    .why-choose-section {
+        padding: 40px 20px;
+    }
+}
